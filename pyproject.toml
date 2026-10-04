@@ -1,0 +1,7 @@
+[project]
+name = "aif-midterm-first-semester"
+version = "0.1.0"
+description = "Project for AI fundamentals midterm with all animations."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
