@@ -74,7 +74,7 @@ class AgentPerceptsScene(Scene):
         for r in range(self.ROWS):
             for c in range(self.COLS):
                 wall = self.GRID[r][c] == "#"
-                sq = Square(side=self.CELL, stroke_color=C_EDGE, stroke_width=1.5,
+                sq = Square(side_length=self.CELL, stroke_color=C_EDGE, stroke_width=1.5,
                             fill_color="#475569" if wall else C_UNSEEN,
                             fill_opacity=1 if wall else 0.6)
                 sq.move_to(self.cell_center(c, r))
@@ -101,7 +101,7 @@ class AgentPerceptsScene(Scene):
 
         # --- fog: the agent only gets percepts ---
         for (c, r), sq in cells.items():
-            f = Square(side=self.CELL, stroke_width=0, fill_color=BG, fill_opacity=0)
+            f = Square(side_length=self.CELL, stroke_width=0, fill_color=BG, fill_opacity=0)
             f.move_to(sq)
             fog[(c, r)] = f
         fog_group = VGroup(*fog.values())

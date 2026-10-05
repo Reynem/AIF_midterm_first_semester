@@ -1,5 +1,5 @@
 from graph_data import best_first_trace, bfs_trace, dfs_trace
-from .search_base import SearchScene
+from animations.search_base import SearchScene
 
 
 class BFSScene(SearchScene):

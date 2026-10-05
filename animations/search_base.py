@@ -1,4 +1,3 @@
-import numpy as np
 from manim import *
 
 from config import (
